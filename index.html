@@ -4,6 +4,7 @@
     <title>
     MyPortfolioPage
     </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
         <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.helper.ie8.js"></script><![endif]-->
         <link rel="stylesheet" type="text/css" href="index.css">
@@ -18,50 +19,54 @@
 <div id="navBar">
     <section class="container">
         <div class="row">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            <div>
-                <li class="list">
-                    <a href="#Tony">Tony</a>
-                </li>  
-                <nav id="navList">
-                    <ul class="ul">  
-                        <li class="list active">
-                            <a href="#mainLeft"> 
-                                <img class="nav-icons" src="icons/home-outline.svg">                    
-                                <span > Home </span>
-                            </a>
-                        </li>
-                        <li class="list">
-                            <a href="#aboutMe">
-                                
-                               About Me
-                            </a>
-                        </li>
-                        <li class="list">
-                            <a href="#myServices">
-                                My Services
-                            </a>
-                        </li>
-                        <li class="list">
-                            <a href="#latestWorks">
-                                Portfolio
-                            </a>
-                        </li>
-                        <li class="list">
-                            <a href="#blog">
-                                Blog
-                            </a>
-                        </li>
-                        <li class="list">
-                            <a href="#getInTouch" id="contactBtn">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-                </nav>   
-            </div>             
+                <nav class="navbar navbar-expand-md navbar-light bg-light"> 
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navList" aria-controls="navList" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div id="navList" class="collapse navbar-collapse"> 
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="ul ">  
+                                    <li class="list active nav-item">
+                                        <a href="#mainLeft"> 
+                                            <i class="fas fa-home"></i>                  
+                                            <span > Home </span>
+                                        </a>
+                                      
+                                    </li>
+                                    <li class="list nav-item ">
+                                        <a href="#aboutMe">
+                                            <i class="fas fa-id-card"></i>            
+                                        <span > About Me </span>
+                                        </a>
+                                    </li>
+                                    <li class="list nav-item">
+                                        <a href="#myServices">
+                                            <i class="fas fa-concierge-bell"></i>
+                                            My Services
+                                        </a>
+                                    </li>
+                                    <li class="list nav-item">
+                                        <a href="#latestWorks">
+                                            <i class="fas fa-briefcase"></i>
+                                            Portfolio
+                                        </a>
+                                    </li>
+                                    <li class="list nav-item">
+                                        <a href="#blog">
+                                            <i class="fas fa-blog"></i>
+                                            Blog
+                                        </a>
+                                    </li>
+                                    <li class="list nav-item">
+                                        <a href="#getInTouch" id="contactBtn">
+                                            <i class="fas fa-mail-bulk"></i>
+                                            Contact
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>   
+                </nav>               
         </div>
     </section>
 </div>
@@ -352,6 +357,7 @@
         <div class="sharethis-inline-share-buttons"></div>
     </div>
 </div>
+<script src="https://kit.fontawesome.com/9b96bd7976.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5ed18782e15c0d001255513a&product=inline-share-buttons" async="async"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <script src="script.js"></script>
