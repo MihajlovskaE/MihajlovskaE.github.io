@@ -142,10 +142,6 @@
     max-width: 100%;
     padding: 2px;
 }
-#slideBtn{
-
-
-}
 #option1, #option2 {
     width: 20px;
     height: 20px;
@@ -160,4 +156,8 @@
     border-color: #d9832e;
     border-radius: 50%;
     visibility: hidden;
+}
+#aboutMeImg{
+    background-color: #f1f1f1;
+    padding: 5px;
 }
