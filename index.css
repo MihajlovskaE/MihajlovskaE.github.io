@@ -158,14 +158,26 @@
     visibility: hidden;
 }
 #aboutMeImg{
-    background-color: #f1f1f1;
-    padding: 5px;
+    background-color: #fff;
+    padding:10px;
 }
 #socialNav{
-    width: 50px;
+    width: 60px;
     position: absolute;
     top: 20px;
-    left: -10px;
+    left: 16px;
     background: #ffffff;
     padding: 8px;
+}
+#socialNav a {
+    display: block;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+.customIcons{
+    color: #d9832e;
+    size: 50px;
+
+
 }
