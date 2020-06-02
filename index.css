@@ -34,9 +34,10 @@
 @keyframes myanimation{
     0%{
         content: "Developer";
+      
     }
     100%{
-        content:"Designer"
+        content:"Designer";
     }
 }
 .padding{
@@ -194,4 +195,31 @@
     font-size: 35px;
     text-align: center;
     padding: 5px;
+}
+.card-box{
+    background-color: #fff;
+    position: relative;
+    border-radius: 5px;
+    border: thin;
+    border-color: grey;
+    margin: 15px;
+    transition: ease all 0.35s;
+}
+.card-body{
+    padding-top: 150px;
+}
+.card-box :hover{
+    background-color: #d9832e;
+    
+}
+.card-icon{
+    text-align: center;
+}
+.service-icon{
+    border-radius: 50%;
+    border-color: #d9832e ;
+    border: 1px dotted;
+    font-size: 30px;
+    padding: 15px;
+    margin: 10px;
 }
