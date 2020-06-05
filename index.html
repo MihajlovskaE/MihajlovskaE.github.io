@@ -16,59 +16,62 @@
 <body>
 <div class="container">
     <!----Navigation-->
-<div id="navBar">
-    <section class="container">
-        <div class="row">
-                <nav class="navbar navbar-expand-md navbar-light bg-light"> 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navList" aria-controls="navList" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                    <div id="navList" class="collapse navbar-collapse"> 
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="ul ">  
-                                    <li class="list active nav-item">
-                                        <a href="#mainLeft"> 
-                                            <i class="fas fa-home"></i>                  
-                                            <span > Home </span>
-                                        </a>
-                                      
-                                    </li>
-                                    <li class="list nav-item ">
-                                        <a href="#aboutMe">
-                                            <i class="fas fa-id-card"></i>            
-                                        <span > About Me </span>
-                                        </a>
-                                    </li>
-                                    <li class="list nav-item">
-                                        <a href="#myServices">
-                                            <i class="fas fa-concierge-bell"></i>
-                                            My Services
-                                        </a>
-                                    </li>
-                                    <li class="list nav-item">
-                                        <a href="#latestWorks">
-                                            <i class="fas fa-briefcase"></i>
-                                            Portfolio
-                                        </a>
-                                    </li>
-                                    <li class="list nav-item">
-                                        <a href="#blog">
-                                            <i class="fas fa-blog"></i>
-                                            Blog
-                                        </a>
-                                    </li>
-                                    <li class="list nav-item">
-                                        <a href="#getInTouch" id="contactBtn">
-                                            <i class="fas fa-mail-bulk"></i>
-                                            Contact
-                                        </a>
-                                    </li>
-                                </ul>
-                        </div>
-                    </div>   
-                </nav>               
+    <!---<div class="hiddenNav">
+   
+            <button class="openbtn align-self-end" onclick="opencloseNav()">☰</button>
+  
+    </div>--->
+    <div class="hiddenNav">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="navbar-brand">
+                <a href="index.html" class="logo-text" alt="Tony Portfolio">TONY</a>
+            </div>
         </div>
-    </section>
+        <nav class="navbar navbar-light justify-content-end">
+          <button class="navbar-toggler" onclick="openCloseMenu()"  type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+    </div>
+<div class="navbar navbar-expand-md"  id="navList">
+    <ul class="nav flex-column collapse navbar-nav navbar-collapse" id="navbarSupportedContent">
+        <li class="nav-item active">
+            <a class="nav-link" href="#mainLeft">
+                <i class="fas fa-home"></i>   
+                HOME
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#aboutMe">
+                <i class="fas fa-id-card"></i>            
+                <span > About Me </span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#myServices">
+                <i class="fas fa-concierge-bell"></i>
+                <span> Services </span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#latestWorks">
+                <i class="fas fa-briefcase"></i>
+                Portfolio
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#blog">
+                <i class="fas fa-blog"></i> <BR/>
+                <span>BLOG</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"href="#getInTouch" id="contactBtn">
+                <i class="fas fa-mail-bulk"></i>
+                Contact
+            </a>
+        </li>
+    </ul>
 </div>
     <!-----Main Left-->
 <div id="mainBody">
@@ -125,7 +128,7 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-md-6 col-sm-12 ">
-                                <div class="row dataInfo">
+                                <div class="row dataInfo ">
                                     <div class="col-md-3">
                                         <div>Birthday</div>
                                     </div>
@@ -135,43 +138,43 @@
                             </div>
                             </div>
                             <div class="col-md-6 col-sm-12">
-                                <div class="dataInfo">
+                                <div class="">
                                     <label>Age</label>
                                     <span>21yrs</span>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12">
-                                <div class="dataInfo">
+                                <div class=>
                                     <label>Residence</label>
                                     <span>Canada</span>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12">
-                                <div class="dataInfo">
+                                <div class="">
                                     <label>Address </label>
                                     <span>California USA</span>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12">
-                                <div class="dataInfo">
+                                <div class="">
                                     <label>E-mail</label>
                                     <span>info@domain.com</span>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12">
-                                <div class="dataInfo">
+                                <div class="">
                                     <label>Skype</label>
                                     <span>skype.0404</span>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12">
-                                <div class="dataInfo">
+                                <div class="">
                                     <label>Phone</label>
                                     <span>820-885-3321</span>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12">
-                                <div class="dataInfo">
+                                <div class="">
                                     <label>Freelance</label>
                                     <span>Available</span>
                                 </div>

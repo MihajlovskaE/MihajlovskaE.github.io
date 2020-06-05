@@ -6,8 +6,19 @@ for( let i=0; i<list.length; i++){
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active"
   });
+  let hiddenNav = document.querySelector(".hiddenNav");
+  const menu = document.getElementById("navList");
+  if (hiddenNav.clientHeight > 0) {
+      menu.classList.remove("navList-open");
+  }
 }
-let mainNavLinks = document.querySelectorAll("nav ul li a");
+
+let hiddenNav = document.querySelector(".hiddenNav");
+if( hiddenNav.clientWidth< 750){
+hiddenNav.classList.add("show");
+}
+
+let mainNavLinks = document.querySelectorAll("#navList ul li a");
 let mainSections = document.querySelectorAll("#mainBody section");
 
 window.addEventListener("scroll", event => {
@@ -26,13 +37,20 @@ window.addEventListener("scroll", event => {
   });
 });
 
-let contactBTn = document.getElementById("contactBtn");
-contactBTn.addEventListener("click", function(){
-   /* const element = document.querySelector('#getInTouch');
-    element.classList.add('animate__animated', 'animate__heartBeat');*/
-    animateCSS("#getInTouch", "heartBeat");
-})
 
+function openCloseMenu(){
+  const menu = document.getElementById("navList");
+  if(menu.clientWidth <=0){
+    menu.classList.add("navList-open");
+  } else{
+    menu.classList.add("navList-hidden");
+  }
+}
+
+let togBtn = document.querySelector(".navbar-toggler");
+togBtn.addEventListener("click", function openCloseMenu(){
+  animateCSS("#navList", "backInLeft");
+})
 const animateCSS = (element, animation, prefix = 'animate__') =>
   // We create a Promise and return it
   new Promise((resolve, reject) => {
@@ -51,6 +69,36 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
 
     node.addEventListener('animationend', handleAnimationEnd);
   });
+
+
+
+
+
+let contactBTn = document.getElementById("contactBtn");
+contactBTn.addEventListener("click", function(){
+   /* const element = document.querySelector('#getInTouch');
+    element.classList.add('animate__animated', 'animate__heartBeat');*/
+    animateCSS("#getInTouch", "heartBeat");
+})
+
+/*const animateCSS = (element, animation, prefix = 'animate__') =>
+  // We create a Promise and return it
+  new Promise((resolve, reject) => {
+    const animationName = `${prefix}${animation}`;
+    const node = document.querySelector(element);
+
+    node.classList.add(`${prefix}animated`, animationName);
+
+    // When the animation ends, we clean the classes and resolve the Promise
+    function handleAnimationEnd() {
+      node.classList.remove(`${prefix}animated`, animationName);
+      node.removeEventListener('animationend', handleAnimationEnd);
+
+      resolve('Animation ended');
+    }
+
+    node.addEventListener('animationend', handleAnimationEnd);
+  });*/
 
   let slider = tns({
     container: ".slider",
