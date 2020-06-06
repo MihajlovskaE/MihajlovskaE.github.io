@@ -12,13 +12,15 @@ for( let i=0; i<list.length; i++){
       menu.classList.remove("navList-open");
   }
 }
-
-let hiddenNav = document.querySelector(".hiddenNav");
-if( hiddenNav.clientWidth< 750){
+$('#myCollapsible').collapse({
+  toggle: false
+})
+/*let hiddenNav = document.querySelector(".hiddenNav");
+if(){
 hiddenNav.classList.add("show");
-}
+}*/
 
-let mainNavLinks = document.querySelectorAll("#navList ul li a");
+let mainNavLinks = document.querySelectorAll("ul li a");
 let mainSections = document.querySelectorAll("#mainBody section");
 
 window.addEventListener("scroll", event => {

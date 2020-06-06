@@ -4,74 +4,80 @@
     <title>
     MyPortfolioPage
     </title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
-        <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.helper.ie8.js"></script><![endif]-->
-        <link rel="stylesheet" type="text/css" href="index.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
 <div class="container">
-    <!----Navigation-->
-    <!---<div class="hiddenNav">
-   
-            <button class="openbtn align-self-end" onclick="opencloseNav()">☰</button>
-  
-    </div>--->
-    <div class="hiddenNav">
-        <div class="collapse" id="navbarToggleExternalContent">
+    <div class="mob-header">
+        <div class="d-flex">
             <div class="navbar-brand">
-                <a href="index.html" class="logo-text" alt="Tony Portfolio">TONY</a>
+                <a class="logo-text" href="index.html">
+                    Tony
+                </a>
             </div>
-        </div>
-        <nav class="navbar navbar-light justify-content-end">
-          <button class="navbar-toggler" onclick="openCloseMenu()"  type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="toggler-menu">
+              <span></span>
+              <span></span>
+              <span></span>
           </button>
-        </nav>
-    </div>
-<div class="navbar navbar-expand-md"  id="navList">
-    <ul class="nav flex-column collapse navbar-nav navbar-collapse" id="navbarSupportedContent">
-        <li class="nav-item active">
-            <a class="nav-link" href="#mainLeft">
-                <i class="fas fa-home"></i>   
-                HOME
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#aboutMe">
-                <i class="fas fa-id-card"></i>            
-                <span > About Me </span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#myServices">
-                <i class="fas fa-concierge-bell"></i>
-                <span> Services </span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#latestWorks">
-                <i class="fas fa-briefcase"></i>
-                Portfolio
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#blog">
-                <i class="fas fa-blog"></i> <BR/>
-                <span>BLOG</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link"href="#getInTouch" id="contactBtn">
-                <i class="fas fa-mail-bulk"></i>
-                Contact
-            </a>
-        </li>
-    </ul>
+        </div>
+      </div>
+    <!----Navigation-->
+<div id="sideMenu">
+    <nav class="navbar flex-column navbar-expand-md navbar-light bg-light"  aria-orientation="vertical">
+        <a class="navbar-brand" href="index.html">Tony</a>
+   
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav  flex-column mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#mainLeft">
+                        <i class="fas fa-home"></i>   
+                        HOME
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutMe">
+                        <i class="fas fa-id-card"></i>            
+                        <span > About Me </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#myServices">
+                        <i class="fas fa-concierge-bell"></i>
+                        <span> Services </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#latestWorks">
+                        <i class="fas fa-briefcase"></i>
+                        Portfolio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">
+                        <i class="fas fa-blog"></i> <BR/>
+                        <span>BLOG</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"href="#getInTouch" id="contactBtn">
+                        <i class="fas fa-mail-bulk"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </div>
     <!-----Main Left-->
 <div id="mainBody">
@@ -117,7 +123,7 @@
                 <div class="col-md-7">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-12 section-title" >
+                            <div class="col-md-12 section-title-about" >
                                 <h3>I am Tony Smith</h3>
                                 <hr class="shortLine">
                                 <p>A LEAD <span style="color: darkgoldenrod;"> UX & UI </span>DESIGNER BASED IN CANADA</p>
@@ -125,67 +131,53 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container">
-                        <div class="row justify-content-center">
+                    <div class="container  my-1">
+                        <div class="row ">
                             <div class="col-md-6 col-sm-12 ">
-                                <div class="row dataInfo ">
-                                    <div class="col-md-3">
-                                        <div>Birthday</div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div>04.April.1911</div>
-                                    </div>
-                            </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="">
-                                    <label>Age</label>
+                                <div>
+                                    <label id="aboutMelabel">Birthday</label>
+                                    <span>04.April 1991</span>
+                                </div>
+                                <div>
+                                    <label id="aboutMelabel">Age</label>
                                     <span>21yrs</span>
                                 </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class=>
-                                    <label>Residence</label>
+                                <div>
+                                    <label id="aboutMelabel">Residence</label>
                                     <span>Canada</span>
                                 </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="">
-                                    <label>Address </label>
+                                <div>
+                                    <label id="aboutMelabel">Address </label>
                                     <span>California USA</span>
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-12">
-                                <div class="">
-                                    <label>E-mail</label>
-                                    <span>info@domain.com</span>
+                                <div>
+                                    <label id="aboutMelabel">E-mail</label>
+                                    <span>info@info.com</span>
                                 </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="">
-                                    <label>Skype</label>
+                                <div>
+                                    <label id="aboutMelabel">Skype</label>
                                     <span>skype.0404</span>
                                 </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="">
-                                    <label>Phone</label>
+                                <div>                                
+                                    <label id="aboutMelabel">Phone</label>
                                     <span>820-885-3321</span>
                                 </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="">
-                                    <label>Freelance</label>
+                                <div>
+                                    <label id="aboutMelabel">Freelance</label>
                                     <span>Available</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12 col-sm-6" >
-                                <button type="button" class="btn btn-warning m-3" id="DownloadCV">DownloadCV</button>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-6" >
+                            <button type="button" class="btn btn-warning m-3" id="DownloadCV">DownloadCV</button>
                         </div>
                     </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
@@ -555,6 +547,9 @@
         <div class="sharethis-inline-share-buttons"></div>
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/9b96bd7976.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5ed18782e15c0d001255513a&product=inline-share-buttons" async="async"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
