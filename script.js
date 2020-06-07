@@ -49,6 +49,14 @@ function openCloseMenu(){
   }
 }
 
+let progress = document.querySelectorAll(".progress");
+progress.addEventListener("DOMload", function(){
+  let slip = document.querySelectorAll(".progress-bar");
+
+  animateCSS(".progress-bar", "slideInLeft");
+})
+
+
 let togBtn = document.querySelector(".navbar-toggler");
 togBtn.addEventListener("click", function openCloseMenu(){
   animateCSS("#navList", "backInLeft");
@@ -72,6 +80,12 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
     node.addEventListener('animationend', handleAnimationEnd);
   });
 
+  $(function(){ 
+    var navMain = $(".navbar-collapse"); 
+    navMain.on("click", "a:not([data-toggle])", null, function () {
+        navMain.collapse('hide');
+    });
+});
 
 
 
