@@ -12,9 +12,7 @@ for( let i=0; i<list.length; i++){
       menu.classList.remove("navList-open");
   }
 }
-$('#myCollapsible').collapse({
-  toggle: false
-})
+
 /*let hiddenNav = document.querySelector(".hiddenNav");
 if(){
 hiddenNav.classList.add("show");
@@ -50,11 +48,25 @@ function openCloseMenu(){
 }
 
 let progress = document.querySelectorAll(".progress");
-progress.addEventListener("DOMload", function(){
-  let slip = document.querySelectorAll(".progress-bar");
+progress.addEventListener("focusin", function move(){
+  let i=0;
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("firstProgress");
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+});
 
-  animateCSS(".progress-bar", "slideInLeft");
-})
 
 
 let togBtn = document.querySelector(".navbar-toggler");
@@ -79,15 +91,6 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
 
     node.addEventListener('animationend', handleAnimationEnd);
   });
-
-  $(function(){ 
-    var navMain = $(".navbar-collapse"); 
-    navMain.on("click", "a:not([data-toggle])", null, function () {
-        navMain.collapse('hide');
-    });
-});
-
-
 
 
 let contactBTn = document.getElementById("contactBtn");

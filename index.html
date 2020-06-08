@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
-<!----<div class="container" >
-    <div class="mob-header"style="visibility:hidden">
+
+  <div id="mobNav" class="mob-header flex-column">
          <a class="navbar-brand" href="index.html">Tony</a>
         <div class="d-flex">
             <div class="navbar-brand">
@@ -31,7 +31,7 @@
               <span></span>
           </button>
         </div>
-      </div>--------->
+      </div>
     <!----Navigation-->
 <div id="sideMenu" role="navigation">
     <nav class="navbar flex-column navbar-expand-lg navbar-light bg-light"  aria-orientation="vertical">
@@ -40,7 +40,7 @@
         </button>
       
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav  flex-column mr-auto mt-2 mt-lg-0">
+            <ul class="navbar-nav  flex-column mr-auto ">
                 <li class="nav-item active">
                     <a class="nav-link" href="#mainLeft">
                         <i class="fas fa-home"></i>   
@@ -82,9 +82,10 @@
     </nav>
 </div>
     <!-----Main Left-->
+<div class="container-fluid" >
 <div id="mainBody">
     <div id="mainLeft" class="mainLeft container">
-        <div class="row full-screen align-items-center">
+        <div class="row">
             <div class="col-md-6 col-sm-12 mainLeftText">
                 <div class="textContainer">
                     <h6>Hello there</h6>
@@ -192,12 +193,12 @@
                     <p>A LEAD <span style="color: darkgoldenrod;">UX & UI </span>DESIGNER BASED IN CANADA</p>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div class="row m-30px-tb">
                 <div class="col-md-6 col-sm-12">
                     <div class="skills">
                         <div>HTML</div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75%" aria-valuemin="75%" aria-valuemax="100">75%</div>
+                        <div id="progress" class="progress">
+                            <div  id="firstProgress" class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75%" aria-valuemin="75%" aria-valuemax="100">75%</div>
                         </div>
                     </div>
                     <div class="skills">
@@ -219,9 +220,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 col-sm-12 m-15px-tb">
-                    <div class="row mx-md-n5 justify-content-center">
-                       
+                <div class="col-md-6 col-sm-12 m-30px-tb">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
                             <div class="media mediaParts shadow p-4 mb-3 border border-warning ">
                                 <div>
                                     <i class="fas fa-medal skill-icons"></i>
@@ -230,8 +231,8 @@
                                     <h5 class="my-2">15 Awards Won</h5>
                                 </div>
                             </div>
-                        
-                      
+                        </div>
+                        <div class="col-md-6 col-sm-12">
                             <div class="media  mediaParts shadow p-3 mb-3 border border-warning">
                                 <div>
                                     <i class="fas fa-street-view skill-icons"></i>
@@ -240,19 +241,21 @@
                                     <h5 class="my-2">3 Continents visited</h5>
                                 </div>
                             </div>
-                      
-                        
-                            <div class="media ashadow p-3 mb-3 border border-warning ">
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="media mediaParts shadow p-3 mb-3 border border-warning ">
                                <div>
                                    <i class="fas fa-compact-disc skill-icons"></i>
                                </div>
                                <div class="media-body ">
                                     <h5 class="my-2">800 albums listened </h5>
                                </div>
-                           </div>
-                        
-                        
-                            <div class="media shadow p-3 mb-3 border border-warning">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="media mediaParts shadow p-3 mb-3 border border-warning">
                                 <div>
                                     <i class="fas fa-coffee skill-icons"></i>
                                 </div>
@@ -260,8 +263,8 @@
                                     <h5 class="my-2">1000 Cups of coffee</h5>
                                 </div>
                             </div>
-                        
-                    </div> 
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -558,6 +561,6 @@
 <script src="script.js"></script>
 
 <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
-
+</div>
 </body>
 </html>

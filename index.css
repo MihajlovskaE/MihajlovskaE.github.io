@@ -75,32 +75,30 @@
     z-index: 3;
 }
 .mob-header {
-    position: fixed;
+    display: none;
+    position: -webkit-sticky;
     top: 0;
     right: 0;
     z-index: 3;
     left: 0;
     padding: 6px 10px;
-    background: #b93333;
+    background: #FFFFFF;
 }
-.toggler-menu span {
-    position: absolute;
+.mob-header-open {
+    display: inline;
+    position:sticky;
     top: 0;
-    left: 0;
-    bottom: 0;
     right: 0;
-    width: 25px;
-    height: 2px;
-    margin: auto;
-    box-shadow: 0px -8px 0 0px currentColor, 0px 8px 0 0px currentColor;
-    background: #ffffff;
-    color: #ffffff;
+    z-index: 3;
+    left: 0;
+    padding: 6px 10px;
+    background: #FFFFFF;
 }
 ul li a>i{
     font-size: 35px;
     padding: 3px;
 }
-#navList li a {
+ul li a {
     display: block;
     color: #000;
     padding: 10px;
@@ -174,8 +172,9 @@ ul li a>i{
 .mediaParts{
     background: white;
     padding: 5px;
-    width: 280px;
+    width: 250px;
     margin-top: 20px;
+    font-size: medium;
 }
 .mediaPartsFirst{
     background: white;
