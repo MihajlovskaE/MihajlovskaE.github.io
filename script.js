@@ -12,11 +12,24 @@ for( let i=0; i<list.length; i++){
       menu.classList.remove("navList-open");
   }
 }
+  /*---------------typed effect--------*/
+document.addEventListener("DOMContentLoaded", function(event) {
+  var typed = new Typed('#typed',{
+      stringsElement: '#typed-strings',
+      backSpeed: 50,
+      typeSpeed: 50,
+      loop: true
+    });
+});
+/* progress bar*/
+let divs = document.getElementsByClassName('progress-bar');
 
-/*let hiddenNav = document.querySelector(".hiddenNav");
-if(){
-hiddenNav.classList.add("show");
-}*/
+for(let i = 0; i < divs.length; i++) {
+    var progressWidth = divs[i].getAttribute('aria-valuenow') + '%';
+    divs[i].setAttribute("style", "width: " + progressWidth + ";")
+}
+
+
 
 let mainNavLinks = document.querySelectorAll("ul li a");
 let mainSections = document.querySelectorAll("#mainBody section");

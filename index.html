@@ -90,10 +90,19 @@
                 <div class="textContainer">
                     <h6>Hello there</h6>
                     <h1>Tony Smith</h1>
-                    <div class="wrapper">
-                        <h4>I am a passionate <span id="spanIntro"></span></h4>
-                    </div>
+                    <div class="wrapper mt-5">
+                        <h4>I am a passionate
+                            <b>
+                                <div id="typed-strings" style="display:none;">
+                                    <p>Developer</p>
+                                    <p>Designer</p>
+                                </div>
+                                <span id="typed"></span>
+                                <span class="typed-cursor"></span>
+                         </b>
+                        </h4>
                     <p>The namics of how users interact with interactive elements within a user interface flow chart based on container proportion.</p>
+                    </div>
                     <div>
                         <a class="btn btn-outline-warning active" id="myWork"  role="button" href="#getInTouch">My work</a>
                         <button type="button" class="btn btn-outline-warning" id="hireMe">Hire Me</button>
@@ -185,7 +194,7 @@
         </section>
     </div>
     <div id="mySkills">
-        <section class="container padding">
+        <section class="container padding mb-5">
             <div class="row section-title">
                 <div class="col-md-12">
                     <h3>MY SKILLS</h3>
@@ -270,7 +279,7 @@
         </section>
     </div>
     <div id="myServices" class="bg-light">
-        <section class="container padding">
+        <section class="container padding m-30px-tb">
             <div class="row section-title">
                 <div id="sectionServices" class="col-md-12">
                     <h3>MY SERVICES</h3>
@@ -278,37 +287,8 @@
                     <p>A LEAD <span style="color: darkgoldenrod;">UX & UI </span>DESIGNER BASED IN CANADA</p>
                 </div>
             </div>
-            <div class="row"> 
-                <div class="col-sm-6  m-15px-tb col-md-4">
-                    <div class="card card-box">
-                        <div class="card-icon">
-                            <i class="fas fa-desktop service-icon"></i>
-                        </div>
-                        <div class="card-body">
-                            <h4>Unique design</h4> 
-                            <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
-                        </div>
-                    </div>
-                    <div class="card card-box">
-                        <div class="card-icon">
-                            <i class="fas fa-desktop service-icon"></i>
-                        </div>
-                        <div class="card-body">
-                            <h4>Unique design</h4> 
-                            <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6  m-15px-tb col-md-4">
-                    <div class="card card-box">
-                        <div class="card-icon">
-                            <i class="fas fa-desktop service-icon"></i>
-                        </div>
-                        <div class="card-body">
-                            <h4>Unique design</h4> 
-                            <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
-                        </div>
-                    </div>
+            <div class="row m-30px-tb"> 
+                <div class="col-sm-12  m-15px-tb col-md-4">
                     <div class="card card-box">
                         <div class="card-icon">
                             <i class="fas fa-desktop service-icon"></i>
@@ -319,22 +299,57 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6  m-15px-tb col-md-4">
+                <div class="col-sm-12  m-15px-tb col-md-4">
                     <div class="card card-box">
                         <div class="card-icon">
                             <i class="fas fa-desktop service-icon"></i>
                         </div>
                         <div class="card-body">
-                            <h4>Unique design</h4> 
+                            <h4>Different Layout</h4> 
                             <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
                         </div>
                     </div>
+                </div>
+                <div class="col-sm-12  m-15px-tb col-md-4">
                     <div class="card card-box">
                         <div class="card-icon">
                             <i class="fas fa-desktop service-icon"></i>
                         </div>
                         <div class="card-body">
-                            <h4>Unique design</h4> 
+                            <h4>Make It Simple</h4> 
+                            <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12  m-15px-tb col-md-4">
+                    <div class="card card-box">
+                        <div class="card-icon">
+                            <i class="fas fa-desktop service-icon"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4>Responsivness</h4> 
+                            <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12  m-15px-tb col-md-4">
+                    <div class="card card-box">
+                        <div class="card-icon">
+                            <i class="fas fa-desktop service-icon"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4>Testing</h4> 
+                            <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12  m-15px-tb col-md-4">
+                    <div class="card card-box">
+                        <div class="card-icon">
+                            <i class="fas fa-desktop service-icon"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4>Advanced Options</h4> 
                             <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
                         </div>
                     </div>
@@ -552,6 +567,7 @@
         <div class="sharethis-inline-share-buttons"></div>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
