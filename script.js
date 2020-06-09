@@ -136,24 +136,13 @@ contactBTn.addEventListener("click", function(){
   let slider = tns({
     container: ".slider",
     items: 2,
+    nav:false,
+    controls:false,
     slideBy: "page",
     swipeAngle: false,
     speed: 400,
-    controls:false,
-    nav:false,
     mouseDrag: true,
     arrowKeys: true,
-    
-    /*responsive: {
-      350: {
-        items: 1,
-        edgePadding: 30
-      },
-      500: {
-        items:2
-      }
-    },*/
-
   })
 
   var btnContainer = document.getElementById("portBtn");

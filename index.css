@@ -188,19 +188,18 @@ ul li a {
     max-width: 100%;
     padding: 2px;
 }
-#option1, #option2 {
+.buttonSlider{
     width: 20px;
     height: 20px;
-    color: antiquewhite;
-    border-color: #d9832e;
     border-radius: 50%;
 }
-#option3, #option4{
-    width: 20px;
-    height: 20px;
+#option1, #option2 {
     color: antiquewhite;
     border-color: #d9832e;
-    border-radius: 50%;
+}
+#option3, #option4{
+    color: antiquewhite;
+    border-color: #d9832e;
     visibility: hidden;
 }
 #aboutMeImg{
@@ -298,6 +297,9 @@ ul li a {
     position: relative; 
     width: 300px;
     
+}
+.relative{
+    position: relative;
 }
 .portfolio-info{
     position: absolute;
