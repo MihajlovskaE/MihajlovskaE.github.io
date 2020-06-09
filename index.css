@@ -330,3 +330,6 @@ ul li a {
     text-align: center;
     margin: 20px;
 }
+.hide {
+    display: none !important;
+}
