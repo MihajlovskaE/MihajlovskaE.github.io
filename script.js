@@ -102,9 +102,12 @@ contactBTn.addEventListener("click", function(){
     mouseDrag: true,
     arrowKeys: true,
     controlsPosition:"top",
-    controlsText:["back","go"],
+    controlsText:["&lt","&gt"],
+    controlsContainer:".tns-controls",
     autoplay:false,
     nav:false,
+    controls:true,
+   
   })
 
   var btnContainer = document.getElementById("portBtn");
@@ -118,7 +121,7 @@ contactBTn.addEventListener("click", function(){
   }
   
   function filterSelection(c) {
-      let boxes = document.getElementsByClassName("item");
+      let boxes = document.getElementsByClassName("filterItem");
   
       for(item of boxes){
           if (c == "all")  {
