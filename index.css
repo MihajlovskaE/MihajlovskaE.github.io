@@ -40,7 +40,7 @@
     }
 }
 .padding{
-    padding-top: 80px;
+    padding-top: 60px;
 }
 .border{
     border: 1px solid lightslategray;
@@ -179,6 +179,12 @@ ul li a {
 @keyframes animateBar {
     0% {transform: translateX(-100%);}
     100% {transform: translateX(0);}
+}
+.secondProgress{
+    animation-name: animateBar;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: .4s;
 }
 .mediaAbout{
     background-color: white;

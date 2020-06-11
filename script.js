@@ -25,9 +25,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 let progress = document.getElementsByClassName('progress');
 let progressBar = document.getElementsByClassName("progress-bar");
 for (let i =0; i<progressBar.length; i++){
-  progressBar[i].addEventListener('focus', function(event){
-  let current = document.getElementsByClassName(".progress-bar");
-  current[0].classList.add('.progress');
+  progressBar[i].addEventListener('focuson', function(event){
+  let current = document.getElementsByClassName("progress-bar");
+  current[0].classList.add('secondProgress');
 })
 }
 
