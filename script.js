@@ -139,3 +139,11 @@ contactBTn.addEventListener("click", function(){
           }
       };
   }
+let formBtn = document.getElementById("send");
+formBtn.addEventListener("click", function Validate(){
+  let inputs=document.querySelectorAll(".form-control");
+  let required = document.getElementsByClassName("form-group");
+  if(inputs != required ){
+    alert("please fill the requested fields");
+  }
+})
