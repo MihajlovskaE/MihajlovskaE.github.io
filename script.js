@@ -22,14 +22,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 });
 /* progress bar*/
-let divs = document.getElementsByClassName('progress-bar');
-
-for(let i = 0; i < divs.length; i++) {
-    var progressWidth = divs[i].getAttribute('aria-valuenow') + '%';
-    divs[i].setAttribute("style", "width: " + progressWidth + ";")
+let progress = document.getElementsByClassName('progress');
+let progressBar = document.getElementsByClassName("progress-bar");
+for (let i =0; i<progressBar.length; i++){
+  progressBar[i].addEventListener('focus', function(event){
+  let current = document.getElementsByClassName(".progress-bar");
+  current[0].classList.add('.progress');
+})
 }
-
-
 
 
 let mainNavLinks = document.querySelectorAll("ul li a");
@@ -60,27 +60,6 @@ function openCloseMenu(){
     menu.classList.add("navList-hidden");
   }
 }
-
-/*let progress = document.querySelectorAll(".progress");
-progress.addEventListener("focusin", function move(){
-  let i=0;
-  if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("firstProgress");
-    var width = 1;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-      }
-    }
-  }
-});*/
-
 
 
 let togBtn = document.querySelector(".navbar-toggler");
@@ -114,35 +93,18 @@ contactBTn.addEventListener("click", function(){
     animateCSS("#getInTouch", "heartBeat");
 })
 
-/*const animateCSS = (element, animation, prefix = 'animate__') =>
-  // We create a Promise and return it
-  new Promise((resolve, reject) => {
-    const animationName = `${prefix}${animation}`;
-    const node = document.querySelector(element);
-
-    node.classList.add(`${prefix}animated`, animationName);
-
-    // When the animation ends, we clean the classes and resolve the Promise
-    function handleAnimationEnd() {
-      node.classList.remove(`${prefix}animated`, animationName);
-      node.removeEventListener('animationend', handleAnimationEnd);
-
-      resolve('Animation ended');
-    }
-
-    node.addEventListener('animationend', handleAnimationEnd);
-  });*/
-
   let slider = tns({
     container: ".slider",
     items: 2,
-    nav:false,
-    controls:false,
     slideBy: "page",
     swipeAngle: false,
     speed: 400,
     mouseDrag: true,
     arrowKeys: true,
+    controlsPosition:"top",
+    controlsText:["back","go"],
+    autoplay:false,
+    nav:false,
   })
 
   var btnContainer = document.getElementById("portBtn");
@@ -154,7 +116,6 @@ contactBTn.addEventListener("click", function(){
       this.className += " active";
     });
   }
-  
   
   function filterSelection(c) {
       let boxes = document.getElementsByClassName("item");
@@ -173,6 +134,5 @@ contactBTn.addEventListener("click", function(){
               item.classList.remove("show");
               item.classList.add("hide");
           }
-      }
-  
-    }
+      };
+  }
